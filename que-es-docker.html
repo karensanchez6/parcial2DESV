@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="¿Qué es Docker?">
+    <title>¿Qué es Docker?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>¿Qué es Docker?</h1>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="parcial2.html">Inicio</a>
+        <a href="que-es-docker.html">¿Qué es Docker?</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="casos-de-uso.html">Casos de Uso</a>
+        <a href="sobre-creador.html">Sobre el Creador</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h2 class="section-title">Introducción a Docker</h2>
+        <p>Docker es una plataforma de software de código abierto que permite crear, probar y desplegar aplicaciones rápidamente en entornos aislados conocidos como <b>contenedores</b>. Lanzado en 2013 por Docker, Inc., Docker ha transformado la forma en que los desarrolladores gestionan aplicaciones al permitirles crear entornos que pueden ejecutarse en cualquier plataforma sin necesidad de modificaciones.</p>
+
+        <h2>Historia de Docker</h2>
+        <p>Docker fue creado por Solomon Hykes mientras trabajaba en una empresa llamada dotCloud. La idea principal era resolver problemas de portabilidad y garantizar que las aplicaciones se ejecutaran de la misma manera sin importar el entorno. En 2013, Docker fue lanzado como un proyecto de código abierto y rápidamente ganó popularidad entre los desarrolladores y empresas debido a su capacidad para simplificar el desarrollo, la prueba y el despliegue de software.</p>
+
+        <h2>¿Cómo funciona Docker?</h2>
+        <p>Docker utiliza una tecnología de virtualización a nivel de sistema operativo, llamada <b>contenedores</b>, que permite ejecutar múltiples aplicaciones de manera aislada en el mismo host. A diferencia de las máquinas virtuales (VM), que requieren un sistema operativo completo para cada aplicación, los contenedores comparten el kernel del sistema operativo, lo que los hace mucho más ligeros y rápidos. Docker empaqueta el código de la aplicación junto con todas sus dependencias en una unidad reproducible llamada <b>imagen</b>, que luego se utiliza para crear un contenedor en cualquier sistema compatible con Docker.</p>
+        <div class="centrar">
+            <img src="img\comofunciona.png">
+        </div>   
+        <h2>Arquitectura de Docker</h2>
+        <p>La arquitectura de Docker se basa en varios componentes clave:</p>
+        <ul class="benefit-list">
+            <li class="use-case"><b>Docker Engine:</b> Es el motor de Docker, responsable de ejecutar y gestionar los contenedores. Incluye el demonio de Docker (Docker Daemon), que es el servicio que se ejecuta en segundo plano y controla todos los aspectos de Docker.</li>
+            <li class="use-case"><b>Docker Client:</b> Es la interfaz de línea de comandos (CLI) que los usuarios utilizan para interactuar con Docker. La mayoría de las operaciones, como la creación y gestión de contenedores, se realizan mediante comandos en la terminal.</li>
+            <li class="use-case"><b>Docker Images:</b> Son plantillas inmutables que contienen el sistema operativo, las bibliotecas y el software necesario para ejecutar una aplicación. Las imágenes son creadas a partir de un archivo llamado <b>Dockerfile</b>, que define las instrucciones paso a paso para construir la imagen.</li>
+            <li class="use-case"><b>Docker Containers:</b> Son instancias en ejecución de las imágenes de Docker. Cada contenedor es independiente y tiene su propio sistema de archivos, red y procesos, aunque comparte el kernel con el sistema host.</li>
+            <li class="use-case"><b>Docker Registry:</b> Es donde se almacenan y distribuyen las imágenes de Docker. Docker Hub es el registro público más popular, pero también es posible configurar registros privados para imágenes internas.</li>
+            <div class="centrar">
+                <img src="img\arq-docker.webp">
+            </div> 
+        </ul>
+
+        <h2>Docker vs. Máquinas Virtuales</h2>
+        <p>Aunque Docker y las máquinas virtuales (VM) pueden parecer similares, ya que ambos permiten ejecutar aplicaciones en entornos aislados, hay diferencias fundamentales:</p>
+        <ul class="benefit-list">
+            <li class="use-case"><b>Consumo de recursos:</b> Las máquinas virtuales son más pesadas, ya que incluyen un sistema operativo completo, mientras que los contenedores comparten el kernel del sistema operativo anfitrión, lo que los hace más ligeros y rápidos.</li>
+            <li class="use-case"><b>Arranque:</b> Un contenedor de Docker se inicia en cuestión de segundos o incluso milisegundos, mientras que una máquina virtual puede tardar varios minutos en arrancar.</li>
+        <div class="centrar">
+            <img src="img\maquinas-contenedores.png" id="maquinas-contenedores">
+        </div>   
+        </div>
+            <footer>
+        <p>© 2024 - Proyecto Docker | Creado por Karen Sánchez</p>
+    </footer>
+        
+</body>
+</html>
+        

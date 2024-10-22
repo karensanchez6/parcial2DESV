@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Casos de uso de Docker">
+    <title>Casos de Uso de Docker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Casos de Uso de Docker</h1>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="parcial2.html">Inicio</a>
+        <a href="que-es-docker.html">¿Qué es Docker?</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="casos-de-uso.html">Casos de Uso</a>
+        <a href="sobre-creador.html">Sobre el Creador</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h2 class="section-title">Aplicaciones Comunes de Docker</h2>
+        <p>Docker tiene un impacto significativo en varias áreas del desarrollo de software y la infraestructura tecnológica. A continuación, te presentamos los principales casos de uso de Docker, detallando cómo su versatilidad beneficia a los equipos y empresas:</p>
+
+        <!-- Desarrollo de Software -->
+        <div class="use-case">
+            <h3><b>1. Desarrollo de Software</b></h3>
+            <p>Docker facilita la creación de entornos de desarrollo consistentes. Los equipos pueden crear imágenes de contenedores que incluyen todas las dependencias, bibliotecas y configuraciones necesarias para el proyecto, garantizando que todos los desarrolladores trabajen bajo las mismas condiciones, sin importar su sistema operativo.</p>
+            <ul>
+                <li>Evita el clásico problema de "funciona en mi máquina".</li>
+                <li>Facilita la integración continua (CI) al asegurar que los entornos de desarrollo y producción sean coherentes.</li>
+                <div class="centrar">
+                    <img src="img\des-docker.png" id="des-docker">
+                </div> 
+            </ul>
+        </div>
+
+        <!-- Pruebas y QA -->
+        <div class="use-case">
+            <h3><b>2. Pruebas y QA</b></h3>
+            <p>Los equipos de calidad (QA) pueden usar Docker para ejecutar pruebas en entornos idénticos a los de producción. Esto permite detectar y corregir errores que solo se presentarían en ciertos sistemas o configuraciones.</p>
+            <ul>
+                <li>Automatización de pruebas en entornos reproducibles.</li>
+                <li>Pruebas de integración más fiables al ejecutar la aplicación completa en contenedores.</li>
+            </ul>
+        </div>
+
+        <!-- Microservicios -->
+        <div class="use-case">
+            <h3><b>3. Microservicios</b></h3>
+            <p>Docker ha sido fundamental en la adopción de arquitecturas de microservicios, donde cada componente de una aplicación se ejecuta en su propio contenedor. Esto permite que los equipos desarrollen, desplieguen y escalen servicios de manera independiente.</p>
+            <ul>
+                <li>Cada microservicio puede tener su propio entorno, facilitando su despliegue y actualización.</li>
+                <li>Escalabilidad horizontal: es posible escalar solo los servicios que lo necesiten sin afectar otros componentes.</li>
+             <div class="centrar">
+                <img src="img\microservicios-docker.png">
+            </div> 
+            </ul>
+        </div>
+
+        <!-- Infraestructura como Código -->
+        <div class="use-case">
+            <h3><b>4. Infraestructura como Código (IaC)</b></h3>
+            <p>Docker se integra perfectamente con herramientas de automatización como Ansible, Terraform y Jenkins, permitiendo que toda la infraestructura se defina como código y se despliegue de manera automática.</p>
+            <ul>
+                <li>Implementa entornos complejos con facilidad al usar scripts de configuración.</li>
+                <li>Reduce la complejidad manual en la configuración de entornos.</li>
+            </ul>
+        </div>
+
+        <!-- Despliegue de Aplicaciones en la Nube -->
+        <div class="use-case">
+            <h3><b>5. Despliegue de Aplicaciones en la Nube</b></h3>
+            <p>Docker es compatible con todas las principales plataformas de nube (AWS, Google Cloud, Azure). Los contenedores pueden desplegarse fácilmente en estos servicios, facilitando la escalabilidad y la gestión de recursos.</p>
+            <ul>
+                <li>Permite mover aplicaciones entre entornos de manera sencilla y eficiente.</li>
+                <li>Optimiza el uso de los recursos en la nube al ejecutar múltiples aplicaciones en un mismo servidor.</li>
+            </ul>
+        </div>
+
+        <!-- Contenedores para Big Data -->
+        <div class="use-case">
+            <h3><b>6. Contenedores para Big Data</b></h3>
+            <p>En entornos de Big Data, Docker permite gestionar grandes volúmenes de datos y ejecutar análisis complejos en contenedores aislados, lo que mejora el rendimiento y la organización de los flujos de trabajo.</p>
+            <ul>
+                <li>Docker se puede integrar con herramientas de Big Data como Apache Hadoop y Apache Spark.</li>
+                <li>Facilita la gestión de clústeres y procesamiento paralelo en entornos distribuidos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 - Proyecto Docker | Creado por Karen Sánchez</p>
+    </footer>
+
+</body>
+</html>
